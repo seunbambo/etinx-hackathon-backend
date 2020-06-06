@@ -1,0 +1,32 @@
+{
+  "name": "node-mongo-signup-verification-api",
+  "version": "1.0.0",
+  "description": "NodeJS + MongoDB API for Todo, Email Sign Up with Verification, Authentication & Forgot Password",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seunbambo/etinx-hackathon-backend.git"
+  },
+  "scripts": {
+    "start": "node ./server.js",
+    "start-dev": "nodemon ./server.js"
+  },
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-jwt": "^5.3.3",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^3.5.7",
+    "mongoose": "^5.9.11",
+    "nodemailer": "^6.4.6",
+    "rootpath": "^0.1.2",
+    "swagger-ui-express": "^4.1.4",
+    "yamljs": "^0.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}
