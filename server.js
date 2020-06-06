@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 // api routes
-app.use("/users", require("./users/users.controller"));
+app.use("/users", require("./users/users_controller"));
 
 // swagger docs route
 app.use("/api-docs", require("_helpers/swagger"));

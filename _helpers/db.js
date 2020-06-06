@@ -13,11 +13,10 @@ mongoose.connect(
 mongoose.Promise = global.Promise;
 
 module.exports = {
-  Account: require("../accounts/account.model"),
+  User: require("../users/user_model"),
   isValidId,
 };
 
 function isValidId(id) {
   return mongoose.Types.ObjectId.isValid(id);
 }
-const config = require("config.json");
