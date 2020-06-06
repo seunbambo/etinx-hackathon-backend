@@ -1,6 +1,6 @@
 {
   "connectionString": "mongodb://localhost/node-mongo-signup-verification-api",
-  "secret": "{B6A7B666-1BDA-4BBE-B75A-D086557C5B15}",
+  "secret": "SECRET",
   "emailFrom": "info@node-mongo-signup-verification-api.com",
   "smtpOptions": {
     "service": "gmail",
@@ -8,8 +8,8 @@
     "port": 587,
     "security": "STARTTLS",
     "auth": {
-      "user": "technifieddevs@gmail.com",
-      "pass": "technifieddevs123"
+      "user": "MAIL_USERNAME",
+      "pass": "MAIL_PASSWORD"
     },
     "secure": false,
     "tls": { "rejectUnauthorized": false },
