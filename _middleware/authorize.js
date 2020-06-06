@@ -17,15 +17,15 @@ function authorize(roles = []) {
 
     // authorize based on user role
     async (req, res, next) => {
-      const account = await db.Account.findById(req.user.id);
+      const user = await db.User.findById(req.user.id);
 
-      if (!account || (roles.length && !roles.includes(account.role))) {
-        // account no longer exists or role not authorized
+      if (!user || (roles.length && !roles.includes(user.role))) {
+        // user no longer exists or role not authorized
         return res.status(401).json({ message: "Unauthorized" });
       }
 
       // authentication and authorization successful
-      req.user.role = account.role;
+      req.user.role = user.role;
       next();
     },
   ];
