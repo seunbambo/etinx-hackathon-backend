@@ -14,6 +14,7 @@ mongoose.Promise = global.Promise;
 
 module.exports = {
   User: require("../users/user_model"),
+  Todo: require("../todo/todo_model"),
   isValidId,
 };
 

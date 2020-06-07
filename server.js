@@ -11,6 +11,7 @@ app.use(cors());
 
 // api routes
 app.use("/users", require("./users/users_controller"));
+app.use("/todos", require("./todo/todo_controller"));
 
 // swagger docs route
 app.use("/api-docs", require("_helpers/swagger"));
